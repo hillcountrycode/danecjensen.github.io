@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>{{page.title}} | Hill Country Code</title>
+    <title>
+      {% if page.layout == 'post' %}
+        {{page.title}} | Hill Country Code
+      {% else %}
+        Hill Country Code
+      {% endif %}
+    </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
     <link href="/css/verdana-sm.css" rel="stylesheet">
